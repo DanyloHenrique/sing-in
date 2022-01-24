@@ -1,0 +1,276 @@
+body {
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+}
+
+/* ----------------------colors variable--------------------*/
+:root {
+  --background-color: #b0d8da;
+  --title-buttom-background_sing_up: #ffffff;
+  --text: #b4b4b4;
+  --text-placeholder: #918888;
+  --hover-color: #b0d8e0;
+}
+
+/* ----------------------sign-up--------------------*/
+#sign-up {
+  background-color: var(--title-buttom-background_sing_up);
+
+  width: 60%;
+  height: 100vh;
+
+  float: right;
+
+  border-radius: 2rem 0 0 2rem;
+
+  text-align: center;
+}
+
+#sign-up .select-language {
+  display: flex;
+  float: right;
+
+  margin: 2rem 6rem 0 0;
+  align-items: center;
+}
+
+#sign-up .select-language p {
+  margin-right: 0.3rem;
+
+  color: var(--text);
+}
+
+#sign-up .select-language .down-arrow {
+  width: 1rem;
+  height: 1rem;
+}
+#sign-up .select-language .down-arrow:hover {
+  cursor: pointer;
+}
+
+#sign-up .header {
+}
+
+#sign-up .header h1 {
+  margin: 6rem auto 2rem;
+}
+
+#sign-up .header .button-login {
+  display: flex;
+
+  margin: 0 10rem;
+}
+
+#sign-up .header .button-login a {
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
+
+  width: 14rem;
+
+  border: 2px solid var(--text);
+  padding: 0.25rem;
+  border-radius: 1rem;
+}
+#sign-up .header .button-login a:hover {
+  background-color: var(--hover-color);
+}
+
+#sign-up .header p {
+  color: var(--text);
+}
+
+#sign-up .header .icon {
+  width: 3.375rem;
+  height: 3.375rem;
+
+  margin-top: 0;
+  margin-right: 1rem;
+}
+
+#sign-up .header .icon.google {
+  width: 2.25rem;
+  height: 2.188rem;
+}
+
+#sign-up .header .icon.facebook {
+  width: 2.75rem;
+  height: 3rem;
+}
+
+#sign-up .header p.or {
+  font-size: 200%;
+}
+
+#sign-up #section form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#sign-up #section form input {
+  border-bottom: 2px solid var(--text);
+
+  margin-bottom: 1rem;
+
+  width: 25rem;
+
+  font-size: 120%;
+  color: var(--text);
+}
+#sign-up #section form input::-webkit-input-placeholder {
+  color: var(--text-placeholder);
+  font-style: italic;
+}
+
+#sign-up #section form input.password {
+  background-image: url(password.svg);
+  background-image: url(password-2.svg);
+  background-repeat: no-repeat;
+
+  background-position: right;
+}
+
+#sign-up #section h3 {
+  margin: 2rem auto 0.5rem;
+
+  background-color: var(--background-color);
+
+  color: var(--title-buttom-background_sing_up);
+
+  font-size: 200%;
+
+  width: 25rem;
+
+  padding: 1rem 0 1rem;
+
+  border-radius: 1.5rem;
+  border: 1px solid var(--title-buttom-background_sing_up);
+}
+
+#sign-up #section h3:hover {
+  background-color: var(--hover-color);
+}
+
+#sign-up #section p {
+  color: var(--text);
+  float: left;
+  margin-left: 26%;
+
+  font-size: 115%;
+}
+
+#sign-up #section a.button-login {
+  color: var(--background-color);
+
+  margin-left: 0.25rem;
+}
+
+#sign-up #section a.button-login:hover {
+  color: var(--hover-color);
+
+  cursor: pointer;
+}
+
+/* --------------------------------GreenWrapper---------------------------- */
+.green-wrapper h2 {
+  position: absolute;
+
+  color: var(--title-buttom-background_sing_up);
+  text-shadow: 0.5rem;
+
+  margin-left: 2%;
+
+  max-width: 25rem;
+
+  font-size: 170%;
+
+  top: 6rem;
+}
+.green-wrapper img {
+  position: absolute;
+}
+
+.green-wrapper img.logo-u {
+  left: -0.5%;
+}
+
+.green-wrapper img.image-3d {
+  z-index: 1;
+
+  width: 50rem;
+  height: 25rem;
+
+  bottom: 13%;
+  right: 40%;
+}
+
+/* ------------------------------------MEDIAS----------------------------------------*/
+@media (max-width: 400px) {
+  #sign-up {
+    width: 100%;
+    height: 87vh;
+
+    border-radius: 2rem;
+  }
+
+  #sign-up .select-language {
+    margin: 0.1rem;
+    align-items: center;
+
+    position: absolute;
+    top: 1px;
+    left: 16rem;
+  }
+  .green-wrapper {
+    height: 100px;
+  }
+  .green-wrapper h2 {
+    color: #000000;
+
+    font-size: 100%;
+    max-width: 300px;
+
+    position: absolute;
+    top: 2.1rem;
+    left: 7rem;
+  }
+
+  .green-wrapper img.image-3d {
+    visibility: hidden;
+  }
+
+  #sign-up .header h1 {
+    margin: 3rem auto 2rem;
+  }
+  #sign-up .header .button-login {
+    flex-direction: column;
+
+    margin: 0;
+  }
+
+  #sign-up .header .button-login a {
+    margin: 0 auto 0.5rem;
+  }
+
+  #sign-up #section form input {
+    width: 90%;
+  }
+
+  #sign-up #section h3 {
+    width: 90%;
+  }
+
+  #sign-up #section p {
+    margin-left: 10%;
+  }
+}
