@@ -65,16 +65,16 @@ input {
 #sign-up .header .button-login {
   display: flex;
 
-  margin: 0 10rem;
+  margin: 0 9rem;
 }
 
 #sign-up .header .button-login a {
   display: flex;
   align-items: center;
 
-  margin: 0 auto;
+  margin: 0 0.5rem;
 
-  width: 14rem;
+  width: 16rem;
 
   border: 2px solid var(--text);
   padding: 0.25rem;
@@ -250,7 +250,7 @@ input {
   }
 
   #sign-up .header h1 {
-    margin: 3rem auto 2rem;
+    margin: 2rem auto;
   }
   #sign-up .header .button-login {
     flex-direction: column;
@@ -260,6 +260,12 @@ input {
 
   #sign-up .header .button-login a {
     margin: 0 auto 0.5rem;
+
+    width: 16rem;
+  }
+
+  #sign-up .header p.or {
+    margin: 16px 0;
   }
 
   #sign-up #section form input {
@@ -272,5 +278,11 @@ input {
 
   #sign-up #section p {
     margin-left: 10%;
+  }
+}
+
+@media (max-height: 670px) {
+  .green-wrapper img.image-3d {
+    top: 200px;
   }
 }
